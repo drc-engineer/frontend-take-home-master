@@ -1,0 +1,86 @@
+{
+  "name": "frontend-take-home",
+  "version": "1.0.0",
+  "description": "project template for new react app",
+  "main": "src/index.jsx",
+  "scripts": {
+    "preinstall": "npx npm-force-resolutions",
+    "test": "jest src/ --passWithNoTests",
+    "test:watch": "jest src/ --watch",
+    "start": "webpack serve --config webpack.config.js",
+    "build": "webpack --config webpack.config.js",
+    "lint": "npx eslint . --fix",
+    "run": "npm run build && npm start",
+    "format:fix": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tyro/frontend-take-home"
+  },
+  "author": "opensource@tyro.com",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "html-webpack-plugin": "^5.3.2",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "typescript": "^4.3.5",
+    "webpack": "^5.49.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/plugin-transform-runtime": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-react": "^7.14.5",
+    "@babel/preset-typescript": "^7.15.0",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^12.1.5",
+    "@types/jest": "^27.5.2",
+    "@types/react": "^16.14.14",
+    "@types/react-dom": "^16.9.14",
+    "@typescript-eslint/eslint-plugin": "^4.29.0",
+    "@typescript-eslint/parser": "^4.29.0",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^6.10.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.24.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "file-loader": "^6.2.0",
+    "husky": "^7.0.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^27.5.1",
+    "jest-dom": "^4.0.0",
+    "npm-force-resolutions": "0.0.10",
+    "prettier": "^3.2.5",
+    "style-loader": "^3.3.4",
+    "ts-jest": "^27.0.5",
+    "ts-loader": "^9.2.5",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "prettier": {
+    "trailingComma": "all",
+    "singleQuote": true,
+    "printWidth": 120,
+    "tabWidth": 4,
+    "overrides": [
+      {
+        "files": [
+          "*.yaml",
+          "*.yml",
+          "*.json"
+        ],
+        "options": {
+          "tabWidth": 2
+        }
+      }
+    ]
+  },
+  "resolutions": {
+    "glob-parent": "6.0.1"
+  }
+}
